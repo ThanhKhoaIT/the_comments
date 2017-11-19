@@ -11,4 +11,5 @@ TheComments.configure do |config|
 
   config.empty_trap_protection     = true
   config.tolerance_time_protection = true
+  config.cookie_domain       = :all
 end

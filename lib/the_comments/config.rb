@@ -19,7 +19,8 @@ module TheComments
                     :default_title,
                     :template_engine,
                     :empty_trap_protection,
-                    :tolerance_time_protection
+                    :tolerance_time_protection,
+                    :cookie_domain
   end
 
   configure do |config|
@@ -33,5 +34,6 @@ module TheComments
 
     config.empty_trap_protection     = true
     config.tolerance_time_protection = true
+    config.cookie_domain       = :all
   end
 end
